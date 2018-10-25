@@ -1,6 +1,2 @@
-# Web-Lab-1
-First Lab roll numbers
-Group number 1
-We have completed all the tasks
-
-Roll numbers 1,2,3
+# Web-Tech-Labs
+Group Members: 16sw17,31,33,39,43,85
