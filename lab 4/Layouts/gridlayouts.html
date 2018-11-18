@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+#head { 
+      grid-area: header;
+      height: 100px;
+      background-color: tomato;
+ }
+#aside { 
+      grid-area: menu;
+      height: 1000px;
+      background-color: orange; 
+ }
+#main { 
+      grid-area: main;
+      height: 1000px;
+
+      background-color: cyan;
+ }
+#side { 
+      grid-area: right;
+      height: 1000px;
+      background-color: lightpink;
+}
+#foot{  
+      grid-area: footer; 
+      background-color: lightgreen;
+      height: 100px;
+ 
+ }
+
+#container {
+     display: grid;
+     grid-template-areas:
+    'header header header header header header header'
+    'menu menu main main main right right'
+    'footer footer footer footer footer footer footer';
+     padding: 10px;
+}
+
+#container > div {
+     text-align: center;
+     padding: 20px 0;
+     font-size: 30px;
+}
+</style>
+</head>
+<body>
+  <div id="container">
+      <div id="head">Header</div>
+      <div id="aside">Left</div>
+      <div id="main">The ultimate goal of pre-operative Health education is to reduce the patient’s surgical related anxiety, morbidity or mortality, and to return them to desirable outcome as quickly as possible. It is imperative (necessary) to realize that improper or lack of Health education appears as a risk for patients; so patients must be prepared before surgery.</div>  
+     <div id="side">Right</div>
+      <div id="foot">Footer</div>
+  </div>
+
+</body>
+</html>

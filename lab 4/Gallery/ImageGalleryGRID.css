@@ -1,0 +1,100 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+background-color: black;
+}
+header {
+	background-color: #f368e0;   
+	border: transparent;  
+	text-align: center; 
+	height: 30px;
+	 text-transform: capitalize;
+	  width: 100% ;
+	  color: white;
+	  position: fixed;
+	  }
+footer {
+	background-color: #f368e0;   
+	border: transparent; 
+	
+	width:100%;
+	height: 40px;
+	position: fixed;
+	bottom: 0;
+	text-transform: capitalize;}
+	img {
+	width: 400px; height: 400px;  
+	border-radius:5px; 
+	border-color: black;}
+
+#flexcontainer {
+	
+	display: grid;
+	 grid-template-columns: repeat(3, 1fr );
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+
+
+
+
+	
+
+}
+#div1 img:hover { grid-column: 1 ;
+  grid-row: 1; align-self: center;
+  width: 500px;
+	height: 500px;
+	animation: test;
+	animation-duration: 4s;
+	animation-iteration-count: all;
+}
+  #div2 img:hover { grid-column:2 ;
+  grid-row: 1;align-self: center;
+width: 500px; height: 500px; -webkit-transform:scaleX(-1); transform: scaleX(-1);}
+  #div3 img:hover { grid-column: 3;
+  grid-row: 1;align-self: center;
+width: 500px; height: 500px; -webkit-transform:scaleX(-1); transform: scaleX(-1);}
+  #div4 img:hover { grid-column: 1;
+  grid-row: 2; align-self: center;
+width: 500px; height: 500px; -webkit-transform:scaleX(-1); transform: scaleX(-1);}
+  #div5 img:hover { grid-column: 2;
+  grid-row: 2; align-self: center;
+width: 500px;
+	height: 500px;
+	animation: test;
+	animation-duration: 4s;
+	animation-iteration-count: all;}
+  #div6 img:hover { grid-column: 3;
+  grid-row: 2; align-self: center;
+width: 500px; height: 330px; -webkit-transform:scaleX(-1); transform: scaleX(-1);}
+  #div7 img:hover { grid-column: 2;
+  grid-row: 3; align-self: center;
+width: 500px;
+	height: 500px;
+	animation: test;
+	animation-duration: 4s;
+	animation-iteration-count: all;}
+
+@keyframes test {
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(90deg);}
+	50%{transform: rotate(180deg);}
+	75%{transform: rotate(270deg);}
+	100%{transform: rotate(360deg);}
+	
+}
+img {
+	width: 350; height: 350;
+}
+
+
+
+/*#flexcontainer div img:hover {
+	 width: 500px; height: 500px; 
+	 -webkit-transform:scaleX(-1);
+	  transform: scaleX(-1);
+}*/
+
+
